@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .table-bordered thead th {
+      background-color: #007bff;
+      color: white;
+    }
+    .table-bordered tbody td {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Country Search</h1>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Country Flag</th>
+            <th>Country Name</th>
+            <th>Continent</th>
+            <th>Currency</th>
+            <th>Independent</th>
+            <th>Capital</th>
+            <th>Timezones</th>
+          </tr>
+        </thead>
+        <tbody id="countryTableBody"></tbody>
+      </table>
+    </div>
+    <nav>
+      <ul class="pagination" id="pagination"></ul>
+    </nav>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
